@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: black;
+    height: 100vh;
+    color: white;
+}
+.pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+.hello{
+    font-size: 70px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 1;
+}
+.horizontal-line{
+    background-color: wheat;
+    width: 35px;
+    height: 3px;
+    margin-top: 8px;
+}
+.text1{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    z-index: 1;
+}
+.creative {
+    color: goldenrod;
+    font-family: scr;
+}
+
+.text2 {
+    writing-mode: vertical-rl;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+    bottom: 0;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 2%;
+}
+ .vertical-line{
+    background-color: wheat;
+    width: 3px;
+    height: 20px;
+    margin-right: 12px;
+} 
+nav {
+    padding-left: 20px;
+}
+img.letter-m{
+    padding-top: 8px;
+}
+nav label.logo{
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+    line-height: 80px;
+}
+nav ul {
+    float: right;
+    display: flex;
+    padding: 5px 10px 0 0;
+    gap: 15px;
+}
+nav ul li{
+    margin-top: 20px;
+}
+#check{
+    display: none;
+}
+.checkbtn:hover {
+    cursor: pointer;
+}
+@media(max-width:428px){
+    img.morgan {
+        display: flex;
+        width: 100vw;
+        height: 90vh;
+        
+    }
+    div.text2{
+        z-index: 1;
+        position: absolute;
+    }
+    nav ul {
+        gap: 10px;
+    }
+    nav label.logo {
+        font-size: 20px;
+        margin-left: 15px;
+        line-height: 63px;
+    }
+    img.letter-m{
+        width: 58px;
+        height: 62px;
+    }
+   
+
+
+}
+
